@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>COPY</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+
+      <style>
+          *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b879;
+}
+
+.container{
+    width: 130%;
+    max-width: 600px;
+    background-color: white;
+    padding: 28px;
+    margin-left: 50px;
+    border-radius: 10px;
+    max-height: 170%;
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 300;
+    text-align: left;
+    padding-bottom: 6px;
+    color: gray;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.user-input-box1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.user-input-box1 label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box1 input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.user-input-box2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    padding-bottom: 15px;
+}
+
+.user-input-box2 label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box2 input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.user-input-box3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.user-input-box3 label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+.user-input-box3 input{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.user-input-box4{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    padding-bottom: 15px;
+}
+
+.user-input-box4 label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box4 input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.user-input-box5{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box5 label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box5 input{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.user-input-box6{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box6 label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box6 input{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.gender-title{
+    color: gray;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: gray;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+.selection{
+    padding-right: 20px;
+    margin-right: 50px;
+    padding: 15px;
+}
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    color: #4c5564;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.top {
+    background-color: #00578c;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+pre{
+    font-size: 12px;
+    color: gray;
+}
+.bottom{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: gray;
+}
+.agree p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: gray;
+}
+.submit{
+    margin-top: 5px;
+}
+.submit input{
+    padding: 10px;
+    cursor: pointer;
+}
+.error-message{
+    color: red;
+    font-size: 11px;
+    margin-top: 5px;
+    display: none;
+    font-family: sans-serif;
+}
+.submit input{
+    width: 500px;
+    background-color: #3c78c6;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+    margin-right: 80px;
+    }
+
+      </style>
+  </head>
+  <body>
+
+
+    <div class="container">
+        <CENTER>
+      <h1 class="form-title">Create your PayMongo account</h1>
+      <pre>
+
+
+
+      <form action="#">
+        <div class="main-user-info">
+
+          <div class="user-input-box2">
+          	<h2>Full name</h2>
+            <label for="username"></label>
+            <input type="text" id="username" required name="username" class="form-control" placeholder="Firstname"/>
+          </div>
+
+          <div class="user-input-box3">
+            <label for="lastname"></label>
+            <input type="lastname" id="lastname" required name="lastname" placeholder="Lastname"/>
+         </div>
+
+         <h2>Mobile number</h2>
+            <div class="user-input-box1">
+            <label for="number"></label>     <h3>e.g. +63917XXXXXXX</h3>
+            <input type="text" id="number" required name="number" placeholder="+63"/>
+    
+          </div>
+                 <h2>Email Address</h2>
+            <div class="user-input-box1">
+            <label for="email"></label> 
+            <input type="text" id="email" required name="email" placeholder="Randiels@domain.com"/>
+    
+          </div>
+
+                 <h2>Password</h2><br>
+                 <pre>Password should have at least 12 characters with one number, one special character</pre>
+                 <pre></pre>
+            <div class="user-input-box1">
+            <label for="password"></label> 
+            <input type="password" id="password" required name="password" placeholder="••••••••"/>
+            <span class="error-message" id="password-error"></span>
+          </div>
+                 <h2>Business name</h2>
+            <div class="user-input-box1">
+            <label for="business"></label> 
+            <input type="text" id="business" required name="business" placeholder="Business name"/>
+          </div>
+
+        <div class="peso-details-box"><br>
+        <p class="peso-title" style="text-align: left; font-size: 15px;">What is your business' average monthly revenue in PHP?</p>
+        <div class="peso-category">
+        <select class="selection" name="pesos[month]">
+        <option value="" disabled selected>Select option</option>
+        <option value="1">Less ₱100,000</option>
+        <option value="2">Between ₱100,000 and ₱300,000</option>
+        <option value="3">Between ₱300,000 and ₱500,000</option>
+        <option value="4">Between ₱500,000 and ₱1M</option>
+        <option value="5">Between ₱1M and ₱3M</option>
+        <option value="6">More than ₱3M</option>
+    </select>
+           <div class="peso-details-box"><br>
+        <p class="peso-title" style="text-align: left; font-size: 15px;">What is your business' average monthly revenue in PHP?</p>
+        <div class="peso-category">
+        <select class="selection" name="pesos[month]">
+        <option value="" disabled selected>Select option</option>
+        <option value="1">I want to integrate it with my website or mobile app</option>
+        <option value="2">I want to send money for my business expenses</option>
+        <option value="3">I want one-time payment links</option>
+        <option value="4">I want to have reusable checkout pages</option>
+        <option value="5">I want to accept payments with my e-commerce platform (Shopify, WooCoom, etc.)</option>
+        <option value="6">I'm still learning about PayMongo</option>
+    </select>
+
+           <div class="policy">
+        <div class="agree">
+        <p>
+        <input type="checkbox" id="term_policy_agreement"> I have reveiewed the <a href="" style="color: #448ad9">terms and conditions</a> and list of <a href="" style="color: #448ad9">prohibited businesses.</a>.
+        </p>
+
+          <div class="submit">
+          <input type="submit" value="Sign Up">
+        </div>
+
+              </form>
+                 <div id="message"></div>
+
+        <script>
+        const passwordInput = document.getElementById("password");
+        const passwordError = document.getElementById("password-error");
+
+        passwordInput.addEventListener("input", function() {
+        if (passwordInput.value.length < 12)
+             {
+            passwordError.textContent = "Invalid Password";
+            passwordError.style.display = "block";
+        } else {
+            passwordError.style.display = "none";
+        }   
+        });
+
+
+
+       
+      
+        </script>
+
+
+    </div>
+  </body>
+</html>
